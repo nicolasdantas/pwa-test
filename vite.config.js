@@ -8,12 +8,7 @@ export default defineConfig({
     plugins: [
         react(),
         VitePWA({
-            selfDestroying:true,
             registerType: 'autoUpdate',
-            devOptions: {
-                enabled: true,
-                navigateFallback:'index.html'
-            },
             manifest: {
                 name: 'My Awesome App',
                 short_name: 'MyApp',
