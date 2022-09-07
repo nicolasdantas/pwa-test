@@ -9,6 +9,9 @@ export default defineConfig({
         react(),
         VitePWA({
             registerType: 'autoUpdate',
+            workbox: {
+                globPatterns: ['**/*.{js,jsx,css,html,ico,png,svg}']
+            },
             manifest: {
                 name: 'My Awesome App',
                 short_name: 'MyApp',
